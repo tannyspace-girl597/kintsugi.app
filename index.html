@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kintsugi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>Kintsugi ✨</h2>
+    <div onclick="mostrar('perfil')">☰</div>
+  </div>
+
+  <!-- HOME -->
+  <div id="home" class="pantalla active">
+
+    <div class="titulo">Cursos</div>
+
+    <div class="cursos">
+
+      <div class="card">
+        <h3>Liderazgo</h3>
+        <p>Empieza tu crecimiento</p>
+        <button onclick="avanzar(this)">Continuar</button>
+      </div>
+
+      <div class="card">
+        <h3>Emprendimiento</h3>
+        <p>Crea tu proyecto</p>
+        <button onclick="avanzar(this)">Continuar</button>
+      </div>
+
+    </div>
+
+    <div class="titulo">Tu progreso</div>
+
+    <div class="barra">
+      <div class="relleno"></div>
+    </div>
+
+    <div class="frase">
+      ✨ “No tienes que ser perfecta, solo constante”
+    </div>
+
+  </div>
+
+  <!-- COMUNIDAD -->
+  <div id="comunidad" class="pantalla">
+
+    <div class="titulo">Comunidad</div>
+
+    <div class="post">
+      <h3>@ana</h3>
+      <p>Hoy avancé en mi curso 💜</p>
+      <span>❤️ 12</span>
+    </div>
+
+    <div class="post">
+      <h3>@maria</h3>
+      <p>Estoy creando mi emprendimiento ✨</p>
+      <span>❤️ 20</span>
+    </div>
+
+  </div>
+
+  <!-- PERFIL -->
+  <div id="perfil" class="pantalla">
+
+    <div class="perfil">
+      <div class="foto"></div>
+      <h3>Tanairy</h3>
+      <p>Cursos completados: 2</p>
+    </div>
+
+  </div>
+
+  <!-- CHATBOT -->
+  <div class="chatbot" onclick="chat()">💜</div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div onclick="mostrar('home')">🏠</div>
+    <div onclick="mostrar('comunidad')">💬</div>
+    <div onclick="mostrar('perfil')">👤</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

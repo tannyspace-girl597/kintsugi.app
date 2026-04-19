@@ -1,0 +1,136 @@
+/* PALETA KINTSUGI */
+:root {
+  --lavanda: #cdb4ff;
+  --rosa: #ffc8dd;
+  --azul: #a2d2ff;
+  --fondo: #f8f5ff;
+  --texto: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: var(--fondo);
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* TITULOS */
+.titulo {
+  margin: 15px;
+  font-weight: bold;
+}
+
+/* CURSOS */
+.cursos {
+  display: flex;
+  gap: 10px;
+  padding: 0 15px;
+  overflow-x: auto;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  min-width: 160px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+button {
+  background: linear-gradient(90deg, var(--lavanda), var(--rosa));
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* PROGRESO */
+.barra {
+  margin: 15px;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.relleno {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--lavanda), var(--azul));
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+/* FRASE */
+.frase {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background: var(--rosa);
+}
+
+/* FEED */
+.post {
+  margin: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+}
+
+/* PERFIL */
+.perfil {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  background: var(--lavanda);
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+}
+
+/* CHATBOT */
+.chatbot {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: var(--lavanda);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* PANTALLAS */
+.pantalla {
+  display: none;
+  padding-bottom: 90px;
+}
+
+.active {
+  display: block;
+}
